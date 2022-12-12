@@ -78,6 +78,14 @@ console.log(boundary(150));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const string = "Vi dà il benvenuto";
+
+function epify(str) {
+    return str + string;
+}
+
+console.log(epify("EPICODE "));
+
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
@@ -126,6 +134,10 @@ console.log(upperFirst("adina gabriela"));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function cutString(str) {
+    return str.charAt(0).shift;
+}
+console.log(cutString("Adina"));
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
@@ -134,10 +146,11 @@ console.log(upperFirst("adina gabriela"));
 
 let numbRandom = [];
 
-function giveMeRandom() {
-    for (let i = 0; i < 10; i++) {
-        return Math.floor(Math.random() * 10) + 1;
-    }
+function giveMeRandom(n) {
+    for (let i = 0; i <= n; i++)
+        return (result = Math.floor(Math.random() * 10) + 1);
+    numbRandom[i] = result;
 }
 
-console.log(giveMeRandom);
+console.log(giveMeRandom(6));
+console.log(numbRandom);
