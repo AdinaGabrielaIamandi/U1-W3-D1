@@ -32,7 +32,7 @@ function crazySum(n1, n2) {
     }
 }
 
-console.log(crazySum(5, 6));
+console.log(crazySum(6, 5));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -60,6 +60,16 @@ console.log(crazyDiff(5));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function boundary(n) {
+    if ((n > 20 && n <= 100) || n === 400) {
+        return "true";
+    } else {
+        return "false";
+    }
+}
+
+console.log(boundary(150));
+
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
  La funzione deve aggiungere la parola "EPICODE" all'inizio della stringa fornita, ma se la stringa fornita comincia già con "EPICODE" allora deve
@@ -75,11 +85,26 @@ console.log(crazyDiff(5));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function check3and7(n6) {
+    if (n6 % 3 === 0 || n6 % 7 === 0) {
+        return "true";
+    } else {
+        return "false";
+    }
+}
+
+console.log(check3and7(3));
+
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function reverseString(stringa) {
+    return stringa.split("").reverse().join("");
+}
+console.log(reverseString("EPICODE"));
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
@@ -87,6 +112,12 @@ console.log(crazyDiff(5));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function upperFirst(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+console.log(upperFirst("adina gabriela"));
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
@@ -100,3 +131,13 @@ console.log(crazyDiff(5));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+let numbRandom = [];
+
+function giveMeRandom() {
+    for (let i = 0; i < 10; i++) {
+        return Math.floor(Math.random() * 10) + 1;
+    }
+}
+
+console.log(giveMeRandom);
