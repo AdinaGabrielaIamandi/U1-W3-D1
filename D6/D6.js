@@ -78,10 +78,14 @@ console.log(boundary(150));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const string = "Vi dà il benvenuto";
+const string = " Vi dà il benvenuto";
 
 function epify(str) {
-    return str + string;
+    if (string.startsWith("EPICODE")) {
+        return string;
+    } else {
+        return str + string;
+    }
 }
 
 console.log(epify("EPICODE "));
@@ -121,8 +125,9 @@ console.log(reverseString("EPICODE"));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-function upperFirst(str) {
-    return str.charAt(0).toUpperCase() + str.slice(1);
+/*function upperFirst(str1) {
+    for (let i = 0;)
+        return str1.charAt(0).toUpperCase() + str1.slice(1);
 }
 
 console.log(upperFirst("adina gabriela"));
@@ -135,7 +140,7 @@ console.log(upperFirst("adina gabriela"));
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function cutString(str) {
-    return str.charAt(0).shift;
+    return str.slice(1, -1);
 }
 console.log(cutString("Adina"));
 /* ESERCIZIO 10
@@ -147,10 +152,10 @@ console.log(cutString("Adina"));
 let numbRandom = [];
 
 function giveMeRandom(n) {
-    for (let i = 0; i <= n; i++)
-        return (result = Math.floor(Math.random() * 10) + 1);
-    numbRandom[i] = result;
+    for (let i = 1; i <= n; i++) {
+        numbRandom.push(Math.floor(Math.random() * 10) + 1);
+    }
+    return numbRandom;
 }
 
-console.log(giveMeRandom(6));
-console.log(numbRandom);
+console.log(giveMeRandom(10));
