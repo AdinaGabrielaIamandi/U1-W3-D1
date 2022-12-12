@@ -43,6 +43,16 @@ console.log(crazySum(5, 6));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function crazyDiff(numb) {
+    if (numb <= 19) {
+        return Math.abs(numb - 19);
+    } else if (numb > 19) {
+        return Math.abs((numb - 19) * 3);
+    }
+}
+
+console.log(crazyDiff(5));
+
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
  se n è uguale a 400.
