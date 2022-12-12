@@ -11,6 +11,11 @@ REGOLE
  Scrivi una funzione di nome "area", che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato..
 */
 
+function area(l1, l2) {
+    return l1 * l2;
+}
+console.log(area(5, 5));
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 2
@@ -18,6 +23,8 @@ REGOLE
  La funzione deve ritornare la somma dei due parametri, ma se il valore dei due parametri è il medesimo deve invece tornare
  la loro somma moltiplicata per tre.
 */
+
+function crazySum()
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
