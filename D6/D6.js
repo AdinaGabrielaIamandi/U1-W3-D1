@@ -11,12 +11,12 @@ REGOLE
  Scrivi una funzione di nome "area", che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato..
 */
 
+/* SCRIVI QUI LA TUA RISPOSTA */
+
 function area(l1, l2) {
     return l1 * l2;
 }
 console.log(area(5, 5));
-
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 2
  Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
@@ -24,7 +24,15 @@ console.log(area(5, 5));
  la loro somma moltiplicata per tre.
 */
 
-function crazySum()
+function crazySum(n1, n2) {
+    if (n1 === n2) {
+        return (n1 + n2) * 3;
+    } else {
+        return n1 + n2;
+    }
+}
+
+console.log(crazySum(5, 6));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
